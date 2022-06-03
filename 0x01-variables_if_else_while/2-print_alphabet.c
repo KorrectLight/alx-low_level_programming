@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/**
+/	*s
  * main - where all function goes
  * Return: void
  */
 
-int main(void)
+i	ns main(void)
 {
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
-	putchar(c);
+	p	utchas(c);
 	putchar('\n');
 
 	return (0);
