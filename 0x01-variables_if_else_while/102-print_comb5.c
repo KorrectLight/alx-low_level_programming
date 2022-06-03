@@ -3,7 +3,7 @@
 
 /**
  * main - storage
- * Retun: void
+ * Return: void
  */
 
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 
 	for (d = '0'; d <= '9'; d++)
 	{
-		for (g = '0'; g <= '9';g++)
+		for (g = '0'; g <= '9'; g++)
 		{
 			for (v = '0'; v <= '9'; v++)
 			{
@@ -28,6 +28,7 @@ int main(void)
 						putchar(' ');
 						putchar(v);
 						putchar(w);
+
 						if (d == '9' && g == '8')
 							break;
 						{
