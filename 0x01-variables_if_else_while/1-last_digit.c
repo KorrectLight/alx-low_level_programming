@@ -5,9 +5,9 @@
 /* This program is going to print the last digit */
 
 /**
-* main - This contains all main code 
-* Return: void
-*/
+ * main - contains all main code
+ * Return: void
+ */
 int main(void)
 {
 	int n;
@@ -30,4 +30,4 @@ int main(void)
 	printf("Last digit of %d is %d and is 0\n", n, a);
 
 	return (0);
-}	
+}
