@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - where all output are stored
- * Return: (void)
+ * main - this is where the code goes
+ * Return: void
  */
 
 int main(void)
@@ -11,13 +11,12 @@ int main(void)
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-
-	for (c = 'A'; c <= 'Z'; c++)
-		putchar(c);
+	       if (c != 'e')
+	       		if (c != 'q')
+		 		putchar(c);
 
 	putchar('\n');
 
 	return (0);
 
-}
+}	
