@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	int d,g;
-	
+	int d, g;
+
 	for (d = 0; d <= 98; d++)
 	{
 		for (g = d + 1; g <= 99; g++)
