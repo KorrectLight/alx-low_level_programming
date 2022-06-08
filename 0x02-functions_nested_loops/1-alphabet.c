@@ -3,12 +3,12 @@
 #include "main.h"
 
 /**
- * main - Print alphabet in lowercase.
+ * print_alphabet - Print alphabet in lowercase.
  *
  * Return: void
  */
 
-void prnt_alphabet(void)
+void print_alphabet(void)
 {
 	int i;
 
