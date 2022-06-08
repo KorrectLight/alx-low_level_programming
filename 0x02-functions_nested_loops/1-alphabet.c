@@ -12,7 +12,7 @@ int main(void)
 {
 	printf("all your main code goes here");
 	return (0);
-
+}
 	void prnt_alphabet(void)
 	{
 		int i;
@@ -24,5 +24,5 @@ int main(void)
 			putchar('\n');
 
 	}
-}
+
 
