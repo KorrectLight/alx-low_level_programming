@@ -1,28 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 
 /**
- * prnt_alphabet - Print alphabet in lowercase.
+ * main - Print alphabet in lowercase.
  *
  * Return: void
  */
 
 int main(void)
 {
-	printf("all your main code goes here");
+	int i;
+
+	for (i = 'a'; i <= 'z'; i++)
+		{
+		putchar(i);
+		}
+	putchar('\n');
+
 	return (0);
+
 }
-	void prnt_alphabet(void)
-	{
-		int i;
-
-		for (i = 'a'; i <= 'z'; i++)
-			{
-			putchar(i);
-			}
-		putchar('\n');
-
-	}
 
 
