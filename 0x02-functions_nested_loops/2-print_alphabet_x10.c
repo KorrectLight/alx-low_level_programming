@@ -20,6 +20,5 @@ void print_alphabet_x10(void)
 				putchar(i);
 			}
 		putchar('\n');
-	
 		}
 }
