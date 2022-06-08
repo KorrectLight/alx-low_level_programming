@@ -8,7 +8,7 @@
  * Return: void
  */
 
-int main(void)
+void prnt_alphabet(void)
 {
 	int i;
 
@@ -18,7 +18,7 @@ int main(void)
 		}
 	putchar('\n');
 
-	return (0);
+
 
 }
 
