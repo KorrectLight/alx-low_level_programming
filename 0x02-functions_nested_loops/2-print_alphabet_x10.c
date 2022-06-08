@@ -8,24 +8,18 @@
  * Return (0)
  */
 
-int main(void)
+void print_alphabeth_x10(void);
 {
-	printf("all your main code goes here");
-	return (0);
+	int a;
 
-	void print_alphabeth_x10(void);
-	{
-		int a;
-
-		for (a = 0; a < 10; a++)
+	for (a = 0; a < 10; a++)
 		{
-			int i;
-
-			for (i = 'a'; i <= 'z'; i++)
+		int i;
+		for (i = 'a'; i <= 'z'; i++)
 			{	
 			putchar(i);
-			putchar('\n');
 			}
+		putchar('\n');
+	
 		}	
-	}
 }
