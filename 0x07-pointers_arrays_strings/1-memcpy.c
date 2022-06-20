@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _memcpy() - a function that copies byte from one memory area to another
