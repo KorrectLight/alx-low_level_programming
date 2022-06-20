@@ -2,10 +2,12 @@
 #include <stdio.h>
 
 /**
- * _memset - a function that locates a character
- * @s: input string
- * @c: input character to locate in string
- * Return: s when a character is found otherwise NULL
+ * _strchr - Locates a character in a string.
+ * @s: The string to be searched.
+ * @c: The character to be located.
+ *
+ * Return: If c is found - a pointer to the first occurence.
+ * If c is not found - NULL.
  */
 
 char *_strchr(char *s, char c)

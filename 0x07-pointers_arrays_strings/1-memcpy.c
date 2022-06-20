@@ -8,6 +8,7 @@
  * @dest: address of the memory area to copying to
  * Return: mem
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i = 0;
