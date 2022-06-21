@@ -7,6 +7,7 @@
  * @a: The matrix of integers.
  * @size: The size of the matrix.
  */
+
 void print_diagsums(int *a, int size)
 {
 	int i, sum = 0, add = 0;
