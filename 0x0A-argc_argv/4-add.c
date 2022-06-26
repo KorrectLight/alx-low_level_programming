@@ -1,62 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include "holberton.h"
 
 /**
- * _atoi - converts string into int value
- * @s: address of the start of the string
- * Return: the string value
- */                                                             
-int _atoi(char *s)
-{
-        int sign = 1;
-        int c = 0;
-        int skip = 1;
-        int i = 0;
-
-        while (s[c] != '\0')
-        {
-                while (s[c] <= '9' && s[c] >= '0')
-                {
-                        skip = 0;
-                        i = (i * 10) + (s[c] - 48);
-                        c++;
-                }
-		if (s[c] != '-' && skip == 1)
-			return (-1010);
-
-                if (s[c] == '-' && skip == 1)
-                        sign = sign * -1;                                       if (skip == 0)
-                        break;
-                c++;                                                    }
-        return (sign * i);
-}
-
-
-/**
- * main - prints my name
- * @argc: number
- * @argv: string
- *
- * Return: success
+ * main - Program that takes in all integer arguments and returns the sum
+ * @argc: Number of command line arguments
+ * @argv: Array name
+ * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	int i;
-	int num;
-	int sum = 0;
+	int i, j, length, sum;
+	char *ptr;
 
-	for (i = 1; i < argc; i++)
+	if (argc < 2)
+	printf("0\n");
+	else
 	{
-		num = _atoi(argv[i]);
-		printf("%d\t", num);
-		if (num == )
+		sum = 0;
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			ptr = argv[i];
+			length = strlen(ptr);
+
+			for (j = 0; j < length; j++)
+			{
+				if (isdigit(*(ptr + j)) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+
+			sum += atoi(argv[i]);
 		}
-		sum = sum + num;
+
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum);
 	return (0);
 }
