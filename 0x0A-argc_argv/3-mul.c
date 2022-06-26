@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int m, k;
+	int i, j;
 
 	if (argc == 1 || argc == 2)
 	{
@@ -20,12 +20,12 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		k = 1;
+		j = 1;
 
-		for (m = 0; m < 3; m++)
-		k *= atoi(argv[m]);
+		for (i = 1; i < 3; i++)
+		j *= atoi(argv[i]);
 
-		printf("%d\n", k);
+		printf("%d\n", j);
 	}
 
 	return (0);
