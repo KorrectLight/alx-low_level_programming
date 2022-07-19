@@ -1,5 +1,4 @@
-lines (36 sloc)  1.2 KB
- #ifndef LISTS_H
+#ifndef LISTS_H
 #define LISTS_H
 
 /*
